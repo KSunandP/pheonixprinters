@@ -1,0 +1,58 @@
+// main: main.less
+
+body {
+    margin: 0;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    font-size: 14px;
+    padding:100px 0 0 0;
+}
+
+.headers-generator(@n; @i : 1) when (@i =< @n)
+{
+  h@{i} {
+      .titlefont();
+      margin: 0 0 1em 0;
+      font-size: (2em - (@i - 1) * 0.2);    
+      
+      &.dark {
+        color: #ffffff;
+      }
+}
+
+  .headers-generator(@n; (@i + 1));
+}
+
+.headers-generator(6);
+
+p {
+    .pfont();
+    color: #000000;
+    
+    &.dark {
+        color:#ffffff;
+    }
+    
+    margin: 0 0 30px 0;
+}
+
+.container {
+    width:1200px;
+    margin: 0 auto;
+}
+
+.ctaButton {
+    margin: 0 0 16px 0;
+    
+    .ctaContainer {
+        a {
+            background: #00aeef;
+            .rounded(@radius: 3px);
+            padding: 10px 20px;
+            text-decoration: none;
+            color: #ffffff;
+            .ctafont;
+        }
+    }
+}

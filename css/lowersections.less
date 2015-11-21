@@ -1,0 +1,113 @@
+// main: main.less
+
+#aboutUs {
+    height:355px;
+    text-align: center;
+    padding:70px 0 0 0;
+    box-sizing: border-box;
+    background: url("../img/aboutUsbgleft.jpg") left no-repeat,
+                url("../img/aboutUsbgright.jpg") right no-repeat;
+    
+    p {
+        width: 960px;
+        margin: 0 auto;
+        text-align: left;
+    }
+}
+
+#services {
+    height: 415px;
+    padding: 70px 0 0 0;
+    box-sizing: border-box;
+    background: url("../img/servicesbg.jpg") center center;
+    
+    p {
+        width: 50%;
+    }
+}
+
+#testimonials {
+    height: 350px;
+    overflow: hidden;
+    
+    .container {
+        width: 1281px;
+    }
+    
+    .testimonials {
+        margin: 0 auto;
+        
+        div {
+            height: 350px;
+            
+            &:nth-child(4n+1) {
+                background: url(../img/testimonialcyan.jpg) no-repeat;
+                background-position: 50px 30px;
+                p {
+                    color: #ffffff;
+                }
+            }
+            &:nth-child(4n+2) {
+                background: url(../img/testimonialmagenta.jpg) no-repeat;
+                background-position: 50px 30px;
+                p {
+                    color: #000000;
+                }
+            }
+            &:nth-child(4n+3) {
+                background: url(../img/testimonialyellow.jpg) no-repeat;
+                background-position: 50px 30px;
+                p {
+                    color: #000000;
+                }
+            }
+            &:nth-child(4n+4) {
+                background: url(../img/testimonialblack.jpg) no-repeat;
+                background-position: 50px 30px;
+                p {
+                    color: #ffffff;
+                }
+            }
+        }
+        
+        p.quote {
+            text-align: center;
+            width: 775px;
+            margin: 0 auto;
+            font-size: 16px;
+            position: relative;
+            top:110px;
+            
+            &:before {
+                content: "\22";
+                position: absolute;
+                top: -10px;
+                left: -10px;
+                font-size: 30px;
+                font-family: 'Droid Sans', sans-serif;
+                font-style: italic;
+                padding: 0 5px 0 0;
+            }
+            
+            &:after {
+                content: "\22";
+                position: absolute;
+                top: -10px;
+                right: -10px;
+                font-size: 30px;
+                font-family: 'Droid Sans', sans-serif;
+                font-style: italic;
+                padding: 0 5px 0 0;
+            }
+        }
+        
+        p.name {
+            width: 775px;
+            text-align: right;
+            position: relative;
+            margin: 0 auto;
+            top: 120px;
+            font-size: 16px;
+        }
+    }
+}

@@ -1,0 +1,53 @@
+// main: main.less
+
+
+.rounded(@radius: 2px) {
+  -webkit-border-radius: @radius;
+  -moz-border-radius: @radius;
+  border-radius: @radius;
+}
+
+.opacity(@opacity: 0.5) {
+  -moz-opacity: @opacity;
+  -khtml-opacity: @opacity;
+  -webkit-opacity: @opacity;
+  opacity: @opacity;
+  @opperc: @opacity * 100;
+  -ms-filter: ~"progid:DXImageTransform.Microsoft.Alpha(opacity=@{opperc})";
+  filter: ~"alpha(opacity=@{opperc})";
+}
+
+.transition(@duration:0.2s, @ease:ease-out) {
+  -webkit-transition: all @duration @ease;
+  -moz-transition: all @duration @ease;
+  -o-transition: all @duration @ease;
+  transition: all @duration @ease;
+}
+
+.titlefont() {
+    font-family: 'Roboto', sans-serif;
+    -webkit-font-smoothing: antialiased!important;
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.004);
+}
+
+.pfont() {
+    font-family: 'Droid Sans', sans-serif;
+    font-size:14px;
+    -webkit-font-smoothing: antialiased!important;
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.004);
+    letter-spacing: -0.5px;
+}
+
+.navfont() {
+    font-family: 'Droid Sans', sans-serif;
+    font-size:16px;
+    -webkit-font-smoothing: antialiased!important;
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.004);
+}
+
+.ctafont() {
+    font-family: 'Droid Sans', sans-serif;
+    font-size:16px;
+    -webkit-font-smoothing: antialiased!important;
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.004);
+}

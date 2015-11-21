@@ -1,0 +1,40 @@
+// main: main.less
+
+header {
+    background:#ffffff;
+    top:0;
+    position: fixed;
+    z-index: 1;
+    height:100px;
+    width:100%;
+    border-bottom: 1px solid #e5e5e5;
+    
+    #logo {
+        width:160px;
+        height: 65px;
+        float: left;
+        margin: 15px 0;
+    }
+    
+    .navList {
+        list-style: none;
+        float:right;
+        top:30px;
+        position: relative;
+        
+        li {
+            .navfont;
+            font-size:16px;
+            float:left;
+            padding-left:20px;
+        }
+    }
+}
+
+.svg header #logo {
+    background: url("../img/logo.svg");
+}
+
+.no-svg header #logo {
+    background: url("../img/logo.png");
+}
