@@ -79,6 +79,13 @@ p {
 p.dark {
   color: #ffffff;
 }
+a {
+  font-family: 'Droid Sans', sans-serif;
+  font-size: 14px;
+  -webkit-font-smoothing: antialiased!important;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.004);
+  letter-spacing: -0.5px;
+}
 .container {
   width: 1200px;
   margin: 0 auto;
@@ -98,6 +105,11 @@ p.dark {
   font-size: 16px;
   -webkit-font-smoothing: antialiased!important;
   text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.004);
+}
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
 }
 header {
   background: #ffffff;
@@ -217,9 +229,8 @@ header .navList li {
   }
 }
 #aboutUs {
-  height: 355px;
   text-align: center;
-  padding: 70px 0 0 0;
+  padding: 50px 0;
   box-sizing: border-box;
   background: url("../img/aboutUsbgleft.jpg") left no-repeat, url("../img/aboutUsbgright.jpg") right no-repeat;
 }
@@ -229,8 +240,7 @@ header .navList li {
   text-align: left;
 }
 #services {
-  height: 415px;
-  padding: 70px 0 0 0;
+  padding: 50px 0;
   box-sizing: border-box;
   background: url("../img/servicesbg.jpg") center center;
 }
@@ -238,17 +248,23 @@ header .navList li {
   width: 50%;
 }
 #testimonials {
-  height: 350px;
-  overflow: hidden;
+  padding: 50px 0 0 0;
 }
-#testimonials .container {
-  width: 1281px;
+#testimonials h3 {
+  text-align: center;
+  margin: 0;
 }
 #testimonials .testimonials {
   margin: 0 auto;
+  position: relative;
+  height: 350px;
 }
 #testimonials .testimonials div {
   height: 350px;
+  position: absolute;
+  margin: 0 auto;
+  left: -40px;
+  right: 0;
 }
 #testimonials .testimonials div:nth-child(4n+1) {
   background: url(../img/testimonialcyan.jpg) no-repeat;
@@ -313,6 +329,44 @@ header .navList li {
   margin: 0 auto;
   top: 120px;
   font-size: 16px;
+}
+#testimonials .pagination {
+  clear: both;
+  margin: 0 auto 10px;
+  padding: 0;
+  text-align: center;
+}
+#testimonials .pagination li {
+  list-style: none;
+  display: inline-block;
+  margin: 0 2px;
+  width: 10px;
+  height: 10px;
+  text-indent: -10000px;
+  background: #999;
+  border-radius: 10px;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  box-shadow: inset 1px 1px 1px rgba(0, 0, 0, 0.4);
+}
+#testimonials .pagination li.active {
+  background: #00aeef;
+}
+#contactUs {
+  background: #3d3d3d;
+  padding: 50px 0;
+  text-align: center;
+}
+#contactUs .ctaButton {
+  display: inline-block;
+  margin: 0 15px 16px;
+}
+.copyright {
+  width: 1200px;
+}
+.copyright p {
+  text-align: right;
+  margin: 0;
 }
 #preloaderbg {
   position: fixed;
