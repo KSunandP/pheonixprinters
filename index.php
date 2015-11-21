@@ -33,36 +33,47 @@
     
 <main>
     <section id="aboutUs">
-        <div class="container">
+        <div class="container clearfix">
             <h4>About us</h3>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.<br><br>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae<br><br>vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam</p>
         </div>
     </section>
     <section id="services">
-        <div class="container">
+        <div class="container clearfix">
             <h3 class="dark">Services</h3>
             <p class="dark">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.<br><br>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo</p>
             <div class="ctaButton">
-            <div class="ctaContainer">
-                <a href="/">
-                    <span>Get a quote now</span>
-                </a>
+                <div class="ctaContainer">
+                    <a href="/">
+                        <span>Get a quote now</span>
+                    </a>
+                </div>
             </div>
-        </div>
         </div>
     </section>
     <section id="testimonials">
         <div class="container">
+            <h3>Testimonials</h3>
             
         </div>
     </section>
     <section id="contactUs">
-        <div class="container">
-            <h3>Heading</h3>
-            <p>
-                Description
-            </p>
-            <div class="contactForm">
+        <div class="container clearfix">
+            <h3 class="dark">Contact us</h3>
+            <p class="dark">Choose whether you would like to get a quote or simply make an enquiry:</p>
+                <div class="ctaButton">
+                    <div class="ctaContainer">
+                        <a href="/">
+                            <span>Get a quote now</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="ctaButton">
+                    <div class="ctaContainer">
+                        <a href="/">
+                            <span>Make an enquiry</span>
+                        </a>
+                    </div>
             </div>
         </div>
     </section>

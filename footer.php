@@ -1,1 +1,1 @@
-<p class="copyright">Copyright © 2015 Phoenix Printers</p>
+<div class="copyright"><p>Copyright © 2015 Phoenix Printers</p></div>

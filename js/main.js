@@ -32,6 +32,7 @@ if ($(window).scrollTop() === 0){
 
 $.getJSON("./js/testimonialfeed.js", function(data){
     var items = [];
+    var pagination = [];
     var testimonialarray = data.testimonials;
     for(i=0; i<testimonialarray.length; i++) {
         items.push("<div class='testimonial" + [i] + "'><p class='quote'>" + testimonialarray[i].quote + "</p><p class='name'>- " + testimonialarray[i].name + ", " + testimonialarray[i].company + "</p></div>");
@@ -40,8 +41,19 @@ $.getJSON("./js/testimonialfeed.js", function(data){
     $("<div/>", {
         "class": "testimonials",
         html: items.join("")
-    }).appendTo("#testimonials .container");
+    }).insertAfter("#testimonials h3");
+    
+    for(i=0; i<testimonialarray.length; i++) {
+        pagination.push("<li></li>");
+    }
+    
+    $("<ul/>", {
+        "class": "pagination",
+        html: "<a class=\"arrowleft\"><</a>" + pagination.join("") + "<a class=\"arrowright\">></a>"
+      }).appendTo("#testimonials .container");
 });
+
+
 
 
 
